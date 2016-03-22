@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.craterzone.fileexperiments.FileOperations"
+    tools:showIn="@layout/activity_file_operations">
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@+id/first_name"
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/save_to_file"
+        android:layout_below="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save in file"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_below="@+id/save_to_file"
+        android:layout_width="wrap_content"
+        android:text="main text"
+        android:lines="10"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/show_from_file"
+        android:layout_below="@+id/main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show saved in file"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/clear_data_from_file"
+        android:layout_below="@+id/show_from_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear data from file"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/show_data_from_file_from_different_thread"
+        android:layout_below="@+id/clear_data_from_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" data from file by different Thread"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
